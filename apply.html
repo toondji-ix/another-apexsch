@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apply — Apex School</title>
+<link rel="stylesheet" href="home.css">
+<link rel="stylesheet" href="pages.css">
+</head>
+<body class="apply-page">
+<a class="skip" href="#main">Skip to content</a>
+<header>
+<div class="container header-inner">
+<a class="brand" href="index.html" aria-label="Apex School home">
+<span class="brand-mark">A</span> APEXSCHOOL</a>
+<button class="menu-toggle" aria-expanded="false" aria-controls="navigation">Menu ☰</button>
+<nav id="navigation" aria-label="Main navigation">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+<a href="apply.html" aria-current="page">Apply</a>
+<a class="button" href="apply.html">Apply Now</a>
+</nav>
+</div>
+</header>
+<main id="main">
+<section class="page-hero apply-hero">
+<div class="page-hero-photo">
+</div>
+<div class="container">
+<h1>APPLY<br>
+<span>HERE.</span>
+</h1>
+<p>We’re looking for curious, driven students ready to challenge themselves.<br>If that’s your child, we’re already looking forward to meeting them.</p>
+<div class="actions">
+<a class="button" href="#application">Admissions open for 2025/2026</a>
+<a class="button ghost" href="#how-it-works">Discover More →</a>
+</div>
+</div>
+</section>
+<section class="how-it-works" id="how-it-works">
+<div class="container">
+<h2>HOW IT WORKS</h2>
+<div class="process-grid">
+<article>
+<span class="step-number">01</span>
+<h3>Complete the form</h3>
+<p>Fill in the online application below. It takes about 10 minutes.</p>
+</article>
+<article>
+<span class="step-number">02</span>
+<h3>Assessment day</h3>
+<p>We’ll invite shortlisted candidates for a friendly aptitude assessment.</p>
+</article>
+<article>
+<span class="step-number">03</span>
+<h3>Interview</h3>
+<p>A casual conversation with the student and parent — no prep required.</p>
+</article>
+<article>
+<span class="step-number">04</span>
+<h3>Offer letter</h3>
+<p>Successful candidates receive an offer within 5 working days.</p>
+</article>
+</div>
+</div>
+</section>
+<section class="application-section container" id="application">
+<article class="photo-card application-photo">
+<img src="assets/apply-lab.jpg" alt="Apex students conducting a science experiment">
+<div class="card-copy">
+<h3>World-class facilities</h3>
+<p>Smartboard classrooms, a fully-stocked library, science labs, art studios, and open green spaces.</p>
+</div>
+</article>
+<div class="application-body">
+<ol class="form-steps" aria-label="Application progress">
+<li aria-current="step">
+<span>1</span> Student Details</li>
+<li>
+<span>2</span> Parent & Guardian</li>
+<li>
+<span>3</span> Your Story</li>
+</ol>
+<form id="application-form">
+<fieldset data-step="0">
+<legend class="sr-only">Student details</legend>
+<div class="form-grid">
+<div class="field ">
+<label for="student-name">Student full name *</label>
+<input id="student-name" name="student-name" type="text" required placeholder="e.g. Temi Adesanya">
+</div>
+<div class="field ">
+<label for="birth-date">Date of birth *</label>
+<input id="birth-date" name="birth-date" type="date" required placeholder="">
+</div>
+<div class="field">
+<label for="gender">Gender *</label>
+<select id="gender" name="gender" required>
+<option value="">Select gender</option>
+<option>Female</option>
+<option>Male</option>
+<option>Prefer not to say</option>
+</select>
+</div>
+<div class="field">
+<label for="year">Year group applying for *</label>
+<select id="year" name="year" required>
+<option value="">Select year</option>
+<option>JSS1</option>
+<option>JSS2</option>
+<option>JSS3</option>
+<option>SS1</option>
+<option>SS2</option>
+<option>SS3</option>
+</select>
+</div>
+<div class="field wide">
+<label for="previous-school">Current / previous school</label>
+<input id="previous-school" name="previous-school" type="text"  placeholder="School name and location">
+</div>
+</div>
+</fieldset>
+<fieldset data-step="1" hidden>
+<legend class="sr-only">Parent and guardian</legend>
+<div class="form-grid">
+<div class="field ">
+<label for="guardian-name">Parent / guardian full name *</label>
+<input id="guardian-name" name="guardian-name" type="text" required placeholder="Full name">
+</div>
+<div class="field ">
+<label for="guardian-email">Email *</label>
+<input id="guardian-email" name="guardian-email" type="email" required placeholder="you@example.com">
+</div>
+<div class="field ">
+<label for="guardian-phone">Phone number *</label>
+<input id="guardian-phone" name="guardian-phone" type="tel" required placeholder="+234 800 000 0000">
+</div>
+<div class="field ">
+<label for="relationship">Relationship to student *</label>
+<input id="relationship" name="relationship" type="text" required placeholder="e.g. Mother">
+</div>
+<div class="field wide">
+<label for="address">Home address *</label>
+<input id="address" name="address" type="text" required placeholder="Address and city">
+</div>
+</div>
+</fieldset>
+<fieldset data-step="2" hidden>
+<legend class="sr-only">Your story</legend>
+<div class="form-grid">
+<div class="field wide">
+<label for="student-story">Tell us about your child *</label>
+<textarea id="student-story" name="student-story" required rows="5" placeholder="Their interests, strengths, and hopes for the future...">
+</textarea>
+</div>
+<div class="field wide">
+<label for="support">Anything else we should know?</label>
+<textarea id="support" name="support" rows="3" placeholder="Learning needs, questions, or additional information">
+</textarea>
+</div>
+<label class="consent wide">
+<input type="checkbox" name="consent" required> I confirm that the information provided is accurate.</label>
+<p class="submission-note wide">Download your completed application, then email it to <a href="mailto:admissions@apexschool.edu">admissions@apexschool.edu</a>.</p>
+</div>
+</fieldset>
+<div class="form-actions">
+<button class="button outline" type="button" id="previous-step" hidden>← Back</button>
+<button class="button" type="submit" id="next-step">Continue →</button>
+</div>
+<div class="form-result" id="application-result" role="status" hidden>
+</div>
+</form>
+</div>
+</section>
+<section class="key-dates container">
+<h2>KEY DATES — 2025/2026</h2>
+<div class="date-grid">
+<article>
+<div>
+<strong>18</strong>
+<span>Oct 2025</span>
+</div>
+<div>
+<h3>Open Day</h3>
+<p>Campus tours from 9am–2pm</p>
+</div>
+</article>
+<article>
+<div>
+<strong>30</strong>
+<span>Nov 2025</span>
+</div>
+<div>
+<h3>Application Deadline</h3>
+<p>For January intake</p>
+</div>
+</article>
+<article>
+<div>
+<strong>10</strong>
+<span>Jan 2026</span>
+</div>
+<div>
+<h3>Academic Year Begins</h3>
+<p>First day of school</p>
+</div>
+</article>
+</div>
+</section>
+</main>
+<footer>
+<div class="container">
+<div class="footer-grid">
+<div>
+<a class="brand" href="index.html" aria-label="Apex School home">
+<span class="brand-mark">A</span> APEXSCHOOL</a>
+<p>Shaping the minds and futures of the next generation through academic excellence, global exposure, and holistic development.</p>
+</div>
+<nav aria-label="Footer navigation">
+<h3>Navigation</h3>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+<a href="apply.html">Apply</a>
+</nav>
+<nav aria-label="Footer navigation">
+<h3>Navigation</h3>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+<a href="apply.html">Apply</a>
+</nav>
+<div>
+<h3>Contact</h3>
+<p>12 Knowledge Avenue<br>Victoria Island, Lagos<br>+234 800 APEX SCH<br>
+<a href="mailto:hello@apexschool.edu">hello@apexschool.edu</a>
+</p>
+</div>
+</div>
+<div class="footer-bottom">
+<span>© 2025 Apex School. All rights reserved.</span>
+<span>Excellence is not an act — it’s a habit.</span>
+</div>
+</div>
+</footer>
+<script src="home.js">
+</script>
+<script src="pages.js">
+</script>
+</body>
+</html>
